@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct Status: Codable {
-    let verified: Bool
-    let sentCount: Int
+    let verified: Bool?
+    let sentCount: Int?
 }
 
 struct CatFact: Codable, Identifiable {
@@ -24,7 +24,7 @@ struct CatFact: Codable, Identifiable {
     let __v : Int?
     let updatedAt: String
     let createdAt: String
-    let status: Status
+    let status: Status?
     
     //This was compulsory
     let id = UUID()

@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         List(facts) { fact in
-            Text("Hello, World!")
+            Text(fact.text)
         }.onAppear {
             Api().getFacts { (facts) in
                 self.facts = facts
