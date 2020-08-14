@@ -14,7 +14,7 @@ struct Status: Codable {
 }
 
 struct CatFact: Codable, Identifiable {
-     let _id = UUID()
+    let _id = UUID()
     let used: Bool
     let source: String
     let type: String
@@ -26,7 +26,7 @@ struct CatFact: Codable, Identifiable {
     let createdAt: String
     let status: Status?
     
-    //This was compulsory
+    //Needed as this is an identifiable
     let id = UUID()
 }
 
@@ -45,8 +45,9 @@ class Api {
 }
 
 /*
- //When call is https://cat-fact.herokuapp.com/facts/random?animal_type=cat
+ //When call is made to  https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=1
  
+ We get the following results back:
  
  {"used":true,
  "source":"user",
@@ -64,11 +65,5 @@ class Api {
  "createdAt":"2018-01-05T21:20:03
  .882Z",
  "status":{"verified":true,
-  "sentCount":1}}
+ "sentCount":1}}
  */
-
-struct Data_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}

@@ -17,8 +17,6 @@ struct ContentView: View {
         }.onAppear {
             Api().getFacts { (facts) in
                 self.facts = facts
-                
-                
             }
         }
     }
