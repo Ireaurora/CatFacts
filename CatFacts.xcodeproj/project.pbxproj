@@ -13,6 +13,7 @@
 		FC800AF724E6752800892CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC800AF624E6752800892CE4 /* Assets.xcassets */; };
 		FC800AFA24E6752800892CE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC800AF924E6752800892CE4 /* Preview Assets.xcassets */; };
 		FC800AFD24E6752800892CE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC800AFB24E6752800892CE4 /* LaunchScreen.storyboard */; };
+		FC800B0524E676FB00892CE4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800B0424E676FB00892CE4 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FC800AF924E6752800892CE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC800AFC24E6752800892CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC800AFE24E6752800892CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC800B0424E676FB00892CE4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				FC800AF024E6752400892CE4 /* AppDelegate.swift */,
 				FC800AF224E6752400892CE4 /* SceneDelegate.swift */,
+				FC800B0424E676FB00892CE4 /* Data.swift */,
 				FC800AF424E6752400892CE4 /* ContentView.swift */,
 				FC800AF624E6752800892CE4 /* Assets.xcassets */,
 				FC800AFB24E6752800892CE4 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				FC800AF124E6752400892CE4 /* AppDelegate.swift in Sources */,
 				FC800AF324E6752400892CE4 /* SceneDelegate.swift in Sources */,
 				FC800AF524E6752400892CE4 /* ContentView.swift in Sources */,
+				FC800B0524E676FB00892CE4 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

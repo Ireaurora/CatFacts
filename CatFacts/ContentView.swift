@@ -9,8 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var facts: [CatFact] = []
+    
     var body: some View {
-        Text("Hello, World!")
+        List(facts) { fact in
+            Text("Hello, World!")
+        }.onAppear {
+            Api().getFacts { (facts) in
+                self.facts = facts
+                
+                
+            }
+        }
     }
 }
 
