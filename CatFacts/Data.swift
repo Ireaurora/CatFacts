@@ -35,10 +35,11 @@ class Api {
         guard let url = URL(string: "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=10") else {return}
         
         URLSession.shared.dataTask(with: url) { (data, _,_) in
-            let facts = try! JSONDecoder().decode([CatFact].self, from: data!)
-            
+            //let facts = try! JSONDecoder().decode([CatFact].self, from: data!)
+            //print(facts.count)
+            let facts = ["hello", "fouaeoiufoarf", "new", "why"]
             DispatchQueue.main.async {
-                completion(facts)
+               // completion(facts)
             }
         }.resume()
     }
