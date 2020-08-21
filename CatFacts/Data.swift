@@ -22,8 +22,8 @@ struct CatFact: Codable, Identifiable {
     let user : String
     let text : String
     let __v : Int?
-    let updatedAt: String
-    let createdAt: String
+    let updatedAt: String?
+    let createdAt: String?
     let status: Status?
     
     //Needed as this is an identifiable
@@ -35,15 +35,15 @@ class Api {
         guard let url = URL(string: "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=10") else {return}
         
         URLSession.shared.dataTask(with: url) { (data, _,_) in
-            //let facts = try! JSONDecoder().decode([CatFact].self, from: data!)
-            //print(facts.count)
-            let facts = ["hello", "fouaeoiufoarf", "new", "why"]
+            let facts = try! JSONDecoder().decode([CatFact].self, from: data!)
+            
             DispatchQueue.main.async {
-               // completion(facts)
+                completion(facts)
             }
         }.resume()
     }
 }
+
 
 /*
  //When call is made to  https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=1

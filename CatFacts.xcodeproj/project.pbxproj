@@ -14,6 +14,8 @@
 		FC800AFA24E6752800892CE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC800AF924E6752800892CE4 /* Preview Assets.xcassets */; };
 		FC800AFD24E6752800892CE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC800AFB24E6752800892CE4 /* LaunchScreen.storyboard */; };
 		FC800B0524E676FB00892CE4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800B0424E676FB00892CE4 /* Data.swift */; };
+		FC84980724F02F990014C122 /* View+stacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84980624F02F990014C122 /* View+stacked.swift */; };
+		FC84980924F030960014C122 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84980824F030960014C122 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FC800AFC24E6752800892CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC800AFE24E6752800892CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC800B0424E676FB00892CE4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		FC84980624F02F990014C122 /* View+stacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+stacked.swift"; sourceTree = "<group>"; };
+		FC84980824F030960014C122 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				FC800AF024E6752400892CE4 /* AppDelegate.swift */,
 				FC800AF224E6752400892CE4 /* SceneDelegate.swift */,
 				FC800B0424E676FB00892CE4 /* Data.swift */,
+				FC84980624F02F990014C122 /* View+stacked.swift */,
 				FC800AF424E6752400892CE4 /* ContentView.swift */,
+				FC84980824F030960014C122 /* CardView.swift */,
 				FC800AF624E6752800892CE4 /* Assets.xcassets */,
 				FC800AFB24E6752800892CE4 /* LaunchScreen.storyboard */,
 				FC800AFE24E6752800892CE4 /* Info.plist */,
@@ -150,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC800AF124E6752400892CE4 /* AppDelegate.swift in Sources */,
+				FC84980724F02F990014C122 /* View+stacked.swift in Sources */,
 				FC800AF324E6752400892CE4 /* SceneDelegate.swift in Sources */,
 				FC800AF524E6752400892CE4 /* ContentView.swift in Sources */,
+				FC84980924F030960014C122 /* CardView.swift in Sources */,
 				FC800B0524E676FB00892CE4 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
